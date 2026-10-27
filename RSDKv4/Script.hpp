@@ -1,0 +1,168 @@
+#ifndef SCRIPT_H
+#define SCRIPT_H
+
+#define SCRIPTDATA_COUNT (0x40000)
+#define JUMPTABLE_COUNT  (0x4000)
+#define FUNCTION_COUNT   (0x200)
+
+#define JUMPSTACK_COUNT (0x400)
+#define FUNCSTACK_COUNT (0x400)
+#define FORSTACK_COUNT  (0x400)
+
+#define RETRO_USE_COMPILER (1)
+
+// keep the compiled global scripts between stage loads (vita only: loading is slow there, desktop users may edit scripts live)
+#define RETRO_SCRIPT_CACHE (RETRO_USE_COMPILER && !RETRO_USE_ORIGINAL_CODE && RETRO_PLATFORM == RETRO_VITA)
+
+struct ScriptPtr {
+    int scriptCodePtr;
+    int jumpTablePtr;
+};
+
+struct ObjectScript {
+    int frameCount;
+    int spriteSheetID;
+    ScriptPtr eventMain;
+    ScriptPtr eventDraw;
+    ScriptPtr eventStartup;
+    int frameListOffset;
+    AnimationFile *animFile;
+};
+
+struct ScriptEngine {
+    int operands[0x10];
+    int temp[8];
+    int arrayPosition[9];
+    int checkResult;
+};
+
+#if RETRO_USE_COMPILER
+#define TABLE_COUNT       (0x200)
+#define TABLE_ENTRY_COUNT (0x400)
+
+struct StaticInfo {
+    StaticInfo()
+    {
+        StrCopy(name, "");
+        value   = 0;
+        dataPos = SCRIPTDATA_COUNT - 1;
+    }
+    StaticInfo(const char *aliasName, int val)
+    {
+        StrCopy(name, aliasName);
+        value   = val;
+        dataPos = SCRIPTDATA_COUNT - 1;
+    }
+
+    char name[0x20];
+    int value;
+    int dataPos;
+};
+
+struct TableValue {
+    TableValue()
+    {
+        value   = 0;
+        dataPos = SCRIPTDATA_COUNT - 1;
+    }
+    TableValue(const char *aliasName, int val)
+    {
+        value   = val;
+        dataPos = SCRIPTDATA_COUNT - 1;
+    }
+
+    int value;
+    int dataPos;
+};
+
+struct TableInfo {
+    TableInfo()
+    {
+        StrCopy(name, "");
+        valueCount = 0;
+        dataPos    = SCRIPTDATA_COUNT - 1;
+    }
+    TableInfo(const char *aliasName, int valCnt)
+    {
+        StrCopy(name, aliasName);
+        valueCount = valCnt;
+        dataPos    = SCRIPTDATA_COUNT - 1;
+    }
+
+    char name[0x20];
+    int valueCount;
+    TableValue values[TABLE_ENTRY_COUNT];
+    int dataPos;
+};
+#endif
+
+enum ScriptSubs { EVENT_MAIN = 0, EVENT_DRAW = 1, EVENT_SETUP = 2 };
+
+extern ObjectScript objectScriptList[OBJECT_COUNT];
+extern ScriptPtr functionScriptList[FUNCTION_COUNT];
+
+extern int scriptData[SCRIPTDATA_COUNT];
+extern int jumpTableData[JUMPTABLE_COUNT];
+
+extern int jumpTableStack[JUMPSTACK_COUNT];
+extern int functionStack[FUNCSTACK_COUNT];
+extern int foreachStack[FORSTACK_COUNT];
+
+extern int scriptCodePos; // Bytecode reading offset
+extern int jumpTablePos;  // Bytecode reading offset
+extern int jumpTableStackPos;
+extern int functionStackPos;
+extern int foreachStackPos;
+
+extern ScriptEngine scriptEng;
+extern char scriptText[0x4000];
+
+extern int scriptDataPos;
+extern int scriptDataOffset;
+extern int jumpTableDataPos;
+extern int jumpTableDataOffset;
+
+bool ConvertStringToInteger(const char *text, int *value);
+
+#if RETRO_USE_COMPILER
+extern int scriptFunctionCount;
+extern char scriptFunctionNames[FUNCTION_COUNT][0x40];
+
+extern int lineID;
+
+void CheckAliasText(char *text);
+void CheckStaticText(char *text);
+TableInfo *CheckTableText(char *text);
+void ConvertArithmaticSyntax(char *text);
+void ConvertIfWhileStatement(char *text);
+void ConvertForeachStatement(char *text);
+bool ConvertSwitchStatement(char *text);
+void ConvertFunctionText(char *text);
+void CheckCaseNumber(char *text);
+bool ReadSwitchCase(char *text);
+void ReadTableValues(char *text);
+void AppendIntegerToString(char *text, int value);
+void AppendIntegerToStringW(ushort *text, int value);
+void CopyAliasStr(char *dest, char *text, bool arrayIndex);
+bool CheckOpcodeType(char *text); // Never actually used
+
+void ParseScriptFile(char *scriptName, int scriptID);
+#endif
+void LoadBytecode(int stageListID, int scriptID);
+
+void ProcessScript(int scriptCodePtr, int jumpTablePtr, byte scriptSub);
+
+void ClearScriptData(void);
+#if RETRO_SCRIPT_CACHE
+void ScriptCacheInvalidate();
+bool ScriptCacheVerifyMode();
+void ScriptCacheSave(int keyA, int keyB);
+bool ScriptCacheRestore(int keyA, int keyB);
+bool ScriptCacheVerify(int keyA, int keyB);
+void ScriptCacheSaveStage(const char *folder, int scriptIDStart, int keyA, int keyB);
+bool ScriptCacheRestoreStage(const char *folder, int scriptIDStart, int keyA, int keyB);
+bool ScriptCacheVerifyStage(const char *folder, int scriptIDStart, int keyA, int keyB);
+bool ScriptCacheHasStage(const char *folder, int scriptIDStart, int keyA, int keyB);
+#endif
+
+#endif // !SCRIPT_H

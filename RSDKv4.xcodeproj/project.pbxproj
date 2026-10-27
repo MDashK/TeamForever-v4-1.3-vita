@@ -1,0 +1,1082 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E1BEFCB29FCACE200A1C6D8 /* ModAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E71426E3199000F09AD4 /* ModAPI.cpp */; };
+		9E1BEFCC29FCACE200A1C6D8 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E71526E3199000F09AD4 /* Renderer.cpp */; };
+		9E1BEFCD29FCACE200A1C6D8 /* Networking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E71326E3199000F09AD4 /* Networking.cpp */; };
+		9E1BEFCE29FCACE600A1C6D8 /* cocoaHelpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9283533264621BB00D51CCE /* cocoaHelpers.mm */; };
+		9E1BEFCF29FCACE600A1C6D8 /* IndirectMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BEFB229FCAA8C00A1C6D8 /* IndirectMain.cpp */; };
+		9E1BEFD029FCACEC00A1C6D8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BEFB429FCAA8C00A1C6D8 /* main.mm */; };
+		9E1BEFD129FCACEC00A1C6D8 /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E72026E31AC000F09AD4 /* tinyxml2.cpp */; };
+		9E1BEFD229FCACF300A1C6D8 /* FadeScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6CA26E3197200F09AD4 /* FadeScreen.cpp */; };
+		9E1BEFD329FCACF300A1C6D8 /* ModInfoButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D126E3197200F09AD4 /* ModInfoButton.cpp */; };
+		9E1BEFD429FCACF300A1C6D8 /* ModsButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6C526E3197100F09AD4 /* ModsButton.cpp */; };
+		9E1BEFD529FCACF300A1C6D8 /* OptionsMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E026E3197300F09AD4 /* OptionsMenu.cpp */; };
+		9E1BEFD629FCACF300A1C6D8 /* RecordsScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D026E3197200F09AD4 /* RecordsScreen.cpp */; };
+		9E1BEFD729FCACF300A1C6D8 /* ModsMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E326E3197400F09AD4 /* ModsMenu.cpp */; };
+		9E1BEFD829FCACF300A1C6D8 /* CreditText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D226E3197200F09AD4 /* CreditText.cpp */; };
+		9E1BEFD929FCACF300A1C6D8 /* SegaIDButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D826E3197300F09AD4 /* SegaIDButton.cpp */; };
+		9E1BEFDA29FCACF300A1C6D8 /* StartGameButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6C326E3197100F09AD4 /* StartGameButton.cpp */; };
+		9E1BEFDB29FCACF300A1C6D8 /* TextLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6DD26E3197300F09AD4 /* TextLabel.cpp */; };
+		9E1BEFDC29FCACF300A1C6D8 /* TitleScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E226E3197400F09AD4 /* TitleScreen.cpp */; };
+		9E1BEFDD29FCACF300A1C6D8 /* MultiplayerHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6EA26E3197400F09AD4 /* MultiplayerHandler.cpp */; };
+		9E1BEFDE29FCACF300A1C6D8 /* SubMenuButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6CE26E3197200F09AD4 /* SubMenuButton.cpp */; };
+		9E1BEFDF29FCACF300A1C6D8 /* VirtualDPad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D626E3197300F09AD4 /* VirtualDPad.cpp */; };
+		9E1BEFE029FCACF300A1C6D8 /* LeaderboardsButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6DC26E3197300F09AD4 /* LeaderboardsButton.cpp */; };
+		9E1BEFE129FCACF300A1C6D8 /* PauseMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6CF26E3197200F09AD4 /* PauseMenu.cpp */; };
+		9E1BEFE229FCACF300A1C6D8 /* RetroGameLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6C626E3197200F09AD4 /* RetroGameLoop.cpp */; };
+		9E1BEFE329FCACF300A1C6D8 /* StaffCredits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D926E3197300F09AD4 /* StaffCredits.cpp */; };
+		9E1BEFE429FCACF300A1C6D8 /* VirtualDPadM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6C826E3197200F09AD4 /* VirtualDPadM.cpp */; };
+		9E1BEFE529FCACF300A1C6D8 /* SettingsScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E626E3197400F09AD4 /* SettingsScreen.cpp */; };
+		9E1BEFE629FCACF300A1C6D8 /* PushButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6DA26E3197300F09AD4 /* PushButton.cpp */; };
+		9E1BEFE729FCACF300A1C6D8 /* AchievementsButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6C726E3197200F09AD4 /* AchievementsButton.cpp */; };
+		9E1BEFE829FCACF300A1C6D8 /* AchievementDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E126E3197300F09AD4 /* AchievementDisplay.cpp */; };
+		9E1BEFE929FCACF300A1C6D8 /* AchievementsMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E426E3197400F09AD4 /* AchievementsMenu.cpp */; };
+		9E1BEFEA29FCACF300A1C6D8 /* AboutScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6C426E3197100F09AD4 /* AboutScreen.cpp */; };
+		9E1BEFEB29FCACF300A1C6D8 /* MenuControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D426E3197300F09AD4 /* MenuControl.cpp */; };
+		9E1BEFEC29FCACF300A1C6D8 /* MenuBG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6DB26E3197300F09AD4 /* MenuBG.cpp */; };
+		9E1BEFED29FCACF300A1C6D8 /* DialogPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6CB26E3197200F09AD4 /* DialogPanel.cpp */; };
+		9E1BEFEE29FCACF300A1C6D8 /* OptionsButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6C926E3197200F09AD4 /* OptionsButton.cpp */; };
+		9E1BEFEF29FCACF300A1C6D8 /* CWSplash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6DF26E3197300F09AD4 /* CWSplash.cpp */; };
+		9E1BEFF029FCACF300A1C6D8 /* ZoneButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D326E3197300F09AD4 /* ZoneButton.cpp */; };
+		9E1BEFF129FCACF300A1C6D8 /* PlayerSelectScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D726E3197300F09AD4 /* PlayerSelectScreen.cpp */; };
+		9E1BEFF229FCACF300A1C6D8 /* InstructionsScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6CC26E3197200F09AD4 /* InstructionsScreen.cpp */; };
+		9E1BEFF329FCACF300A1C6D8 /* MultiplayerButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6CD26E3197200F09AD4 /* MultiplayerButton.cpp */; };
+		9E1BEFF429FCACF300A1C6D8 /* BackButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6DE26E3197300F09AD4 /* BackButton.cpp */; };
+		9E1BEFF529FCACF300A1C6D8 /* SegaSplash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E526E3197400F09AD4 /* SegaSplash.cpp */; };
+		9E1BEFF629FCACF300A1C6D8 /* MultiplayerScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E826E3197400F09AD4 /* MultiplayerScreen.cpp */; };
+		9E1BEFF729FCACF300A1C6D8 /* SaveSelect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E926E3197400F09AD4 /* SaveSelect.cpp */; };
+		9E1BEFF829FCACF300A1C6D8 /* TimeAttackButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6D526E3197300F09AD4 /* TimeAttackButton.cpp */; };
+		9E1BEFF929FCACF300A1C6D8 /* TimeAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C975E6E726E3197400F09AD4 /* TimeAttack.cpp */; };
+		9E1BF00E29FCAD0000A1C6D8 /* Collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962196A25898BF600B47AB3 /* Collision.cpp */; };
+		9E1BF00F29FCAD0000A1C6D8 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195B25898BF500B47AB3 /* Animation.cpp */; };
+		9E1BF01029FCAD0000A1C6D8 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195725898BF500B47AB3 /* Debug.cpp */; };
+		9E1BF01129FCAD0000A1C6D8 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195D25898BF500B47AB3 /* Input.cpp */; };
+		9E1BF01229FCAD0000A1C6D8 /* Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195625898BF500B47AB3 /* Audio.cpp */; };
+		9E1BF01329FCAD0000A1C6D8 /* Drawing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195C25898BF500B47AB3 /* Drawing.cpp */; };
+		9E1BF01429FCAD0000A1C6D8 /* Ini.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195F25898BF600B47AB3 /* Ini.cpp */; };
+		9E1BF01529FCAD0500A1C6D8 /* RetroEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195825898BF500B47AB3 /* RetroEngine.cpp */; };
+		9E1BF01629FCAD0500A1C6D8 /* Userdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962196125898BF600B47AB3 /* Userdata.cpp */; };
+		9E1BF01729FCAD0500A1C6D8 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962196725898BF600B47AB3 /* Object.cpp */; };
+		9E1BF01829FCAD0500A1C6D8 /* Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962196825898BF600B47AB3 /* Math.cpp */; };
+		9E1BF01929FCAD0500A1C6D8 /* Palette.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962196625898BF600B47AB3 /* Palette.cpp */; };
+		9E1BF01A29FCAD0500A1C6D8 /* Reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962196B25898BF600B47AB3 /* Reader.cpp */; };
+		9E1BF01B29FCAD0500A1C6D8 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195A25898BF500B47AB3 /* Sprite.cpp */; };
+		9E1BF01C29FCAD0500A1C6D8 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195925898BF500B47AB3 /* Scene.cpp */; };
+		9E1BF01D29FCAD0500A1C6D8 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962195E25898BF500B47AB3 /* String.cpp */; };
+		9E1BF01E29FCAD0500A1C6D8 /* Text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962196925898BF600B47AB3 /* Text.cpp */; };
+		9E1BF01F29FCAD0500A1C6D8 /* Scene3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962196025898BF600B47AB3 /* Scene3D.cpp */; };
+		9E1BF02029FCAD0500A1C6D8 /* Script.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C962196525898BF600B47AB3 /* Script.cpp */; };
+		9E1BF03029FCAFE400A1C6D8 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA0883D29FA0CB600163B50 /* Ogg.framework */; };
+		9E1BF03129FCAFE400A1C6D8 /* Ogg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA0883D29FA0CB600163B50 /* Ogg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E1BF03229FCAFE400A1C6D8 /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA0883F29FA0CB600163B50 /* Vorbis.framework */; };
+		9E1BF03329FCAFE400A1C6D8 /* Vorbis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA0883F29FA0CB600163B50 /* Vorbis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E1BF03429FCAFE400A1C6D8 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E03820729EE36AE00629FE3 /* SDL2.framework */; };
+		9E1BF03529FCAFE400A1C6D8 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E03820729EE36AE00629FE3 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E1BF03629FCAFE400A1C6D8 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA0885129FA11AF00163B50 /* AppKit.framework */; };
+		9E1BF03729FCAFE400A1C6D8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C975E69826E3190B00F09AD4 /* OpenGL.framework */; };
+		9E1BF03929FCB18900A1C6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C962193625898B0A00B47AB3 /* Assets.xcassets */; };
+		9E372A0D29FF1F0B00A22DAD /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E03820729EE36AE00629FE3 /* SDL2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E03820629EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BECDF66C0761BA81005FE872;
+			remoteInfo = Framework;
+		};
+		9E03820829EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7D88B5423E2437C00DCD162;
+			remoteInfo = "Framework-iOS";
+		};
+		9E03820A29EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7D88D1523E24BED00DCD162;
+			remoteInfo = "Framework-tvOS";
+		};
+		9E03820E29EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BECDF6B30761BA81005FE872;
+			remoteInfo = "Static Library";
+		};
+		9E03821029EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7D88E5423E24D3B00DCD162;
+			remoteInfo = "Static Library-iOS";
+		};
+		9E03821229EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A769B23D23E259AE00872273;
+			remoteInfo = "Static Library-tvOS";
+		};
+		9E03821429EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB31407717554B71006C0E22;
+			remoteInfo = "Shared Library";
+		};
+		9E03821629EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A75FCEB323E25AB700529352;
+			remoteInfo = "Shared Library-iOS";
+		};
+		9E03821829EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A75FD06C23E25AC700529352;
+			remoteInfo = "Shared Library-tvOS";
+		};
+		9E03821A29EE36AE00629FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BECDF6BE0761BA81005FE872;
+			remoteInfo = "Standard DMG";
+		};
+		9E372A0729FF1F0B00A22DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A75FDB8C23E4C74400529352;
+			remoteInfo = hidapi;
+		};
+		9E372A0929FF1F0B00A22DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A75FDB4923E399AC00529352;
+			remoteInfo = "hidapi-iOS";
+		};
+		9E372A0B29FF1F0B00A22DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A75FDB6E23E3A2C900529352;
+			remoteInfo = "hidapi-tvOS";
+		};
+		9EA0883C29FA0CB600163B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F029EE366300629FE3 /* OggAndVorbis.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9EA087D229FA013200163B50;
+			remoteInfo = Ogg;
+		};
+		9EA0883E29FA0CB600163B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E0381F029EE366300629FE3 /* OggAndVorbis.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9EA087E629FA099200163B50;
+			remoteInfo = Vorbis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E1BF03829FCAFE400A1C6D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9E1BF03529FCAFE400A1C6D8 /* SDL2.framework in Embed Frameworks */,
+				9E1BF03129FCAFE400A1C6D8 /* Ogg.framework in Embed Frameworks */,
+				9E1BF03329FCAFE400A1C6D8 /* Vorbis.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9E0381F029EE366300629FE3 /* OggAndVorbis.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OggAndVorbis.xcodeproj; path = dependencies/mac/OggAndVorbis.xcodeproj; sourceTree = "<group>"; };
+		9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = dependencies/mac/SDL2/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
+		9E1BEFB229FCAA8C00A1C6D8 /* IndirectMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IndirectMain.cpp; path = dependencies/mac/IndirectMain.cpp; sourceTree = SOURCE_ROOT; };
+		9E1BEFB329FCAA8C00A1C6D8 /* IndirectMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndirectMain.h; path = dependencies/mac/IndirectMain.h; sourceTree = SOURCE_ROOT; };
+		9E1BEFB429FCAA8C00A1C6D8 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = dependencies/mac/main.mm; sourceTree = SOURCE_ROOT; };
+		9E1BEFBB29FCABB100A1C6D8 /* RSDKv4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSDKv4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EA0885129FA11AF00163B50 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C9283533264621BB00D51CCE /* cocoaHelpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = cocoaHelpers.mm; path = dependencies/mac/cocoaHelpers.mm; sourceTree = SOURCE_ROOT; };
+		C9283535264621C800D51CCE /* cocoaHelpers.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cocoaHelpers.hpp; path = dependencies/mac/cocoaHelpers.hpp; sourceTree = SOURCE_ROOT; };
+		C962193625898B0A00B47AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = dependencies/mac/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		C962194125898BCD00B47AB3 /* Text.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Text.hpp; path = RSDKv4/Text.hpp; sourceTree = SOURCE_ROOT; };
+		C962194225898BCD00B47AB3 /* Script.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Script.hpp; path = RSDKv4/Script.hpp; sourceTree = SOURCE_ROOT; };
+		C962194325898BCD00B47AB3 /* Audio.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Audio.hpp; path = RSDKv4/Audio.hpp; sourceTree = SOURCE_ROOT; };
+		C962194425898BCD00B47AB3 /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Input.hpp; path = RSDKv4/Input.hpp; sourceTree = SOURCE_ROOT; };
+		C962194525898BCD00B47AB3 /* Ini.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Ini.hpp; path = RSDKv4/Ini.hpp; sourceTree = SOURCE_ROOT; };
+		C962194625898BCD00B47AB3 /* Collision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Collision.hpp; path = RSDKv4/Collision.hpp; sourceTree = SOURCE_ROOT; };
+		C962194725898BCD00B47AB3 /* RetroEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RetroEngine.hpp; path = RSDKv4/RetroEngine.hpp; sourceTree = SOURCE_ROOT; };
+		C962194825898BCD00B47AB3 /* Sprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Sprite.hpp; path = RSDKv4/Sprite.hpp; sourceTree = SOURCE_ROOT; };
+		C962194A25898BCD00B47AB3 /* Palette.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Palette.hpp; path = RSDKv4/Palette.hpp; sourceTree = SOURCE_ROOT; };
+		C962194B25898BCD00B47AB3 /* String.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = String.hpp; path = RSDKv4/String.hpp; sourceTree = SOURCE_ROOT; };
+		C962194C25898BCD00B47AB3 /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Scene.hpp; path = RSDKv4/Scene.hpp; sourceTree = SOURCE_ROOT; };
+		C962194D25898BCD00B47AB3 /* Userdata.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Userdata.hpp; path = RSDKv4/Userdata.hpp; sourceTree = SOURCE_ROOT; };
+		C962194E25898BCD00B47AB3 /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = RSDKv4/Debug.hpp; sourceTree = SOURCE_ROOT; };
+		C962194F25898BCD00B47AB3 /* Drawing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Drawing.hpp; path = RSDKv4/Drawing.hpp; sourceTree = SOURCE_ROOT; };
+		C962195025898BCD00B47AB3 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Object.hpp; path = RSDKv4/Object.hpp; sourceTree = SOURCE_ROOT; };
+		C962195125898BCD00B47AB3 /* Scene3D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Scene3D.hpp; path = RSDKv4/Scene3D.hpp; sourceTree = SOURCE_ROOT; };
+		C962195225898BCD00B47AB3 /* Reader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Reader.hpp; path = RSDKv4/Reader.hpp; sourceTree = SOURCE_ROOT; };
+		C962195425898BCE00B47AB3 /* Math.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Math.hpp; path = RSDKv4/Math.hpp; sourceTree = SOURCE_ROOT; };
+		C962195525898BCE00B47AB3 /* Animation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Animation.hpp; path = RSDKv4/Animation.hpp; sourceTree = SOURCE_ROOT; };
+		C962195625898BF500B47AB3 /* Audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Audio.cpp; path = RSDKv4/Audio.cpp; sourceTree = SOURCE_ROOT; };
+		C962195725898BF500B47AB3 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = RSDKv4/Debug.cpp; sourceTree = SOURCE_ROOT; };
+		C962195825898BF500B47AB3 /* RetroEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RetroEngine.cpp; path = RSDKv4/RetroEngine.cpp; sourceTree = SOURCE_ROOT; };
+		C962195925898BF500B47AB3 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scene.cpp; path = RSDKv4/Scene.cpp; sourceTree = SOURCE_ROOT; };
+		C962195A25898BF500B47AB3 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sprite.cpp; path = RSDKv4/Sprite.cpp; sourceTree = SOURCE_ROOT; };
+		C962195B25898BF500B47AB3 /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Animation.cpp; path = RSDKv4/Animation.cpp; sourceTree = SOURCE_ROOT; };
+		C962195C25898BF500B47AB3 /* Drawing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Drawing.cpp; path = RSDKv4/Drawing.cpp; sourceTree = SOURCE_ROOT; };
+		C962195D25898BF500B47AB3 /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Input.cpp; path = RSDKv4/Input.cpp; sourceTree = SOURCE_ROOT; };
+		C962195E25898BF500B47AB3 /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = String.cpp; path = RSDKv4/String.cpp; sourceTree = SOURCE_ROOT; };
+		C962195F25898BF600B47AB3 /* Ini.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ini.cpp; path = RSDKv4/Ini.cpp; sourceTree = SOURCE_ROOT; };
+		C962196025898BF600B47AB3 /* Scene3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scene3D.cpp; path = RSDKv4/Scene3D.cpp; sourceTree = SOURCE_ROOT; };
+		C962196125898BF600B47AB3 /* Userdata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Userdata.cpp; path = RSDKv4/Userdata.cpp; sourceTree = SOURCE_ROOT; };
+		C962196325898BF600B47AB3 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = RSDKv4/main.cpp; sourceTree = SOURCE_ROOT; };
+		C962196525898BF600B47AB3 /* Script.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Script.cpp; path = RSDKv4/Script.cpp; sourceTree = SOURCE_ROOT; };
+		C962196625898BF600B47AB3 /* Palette.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Palette.cpp; path = RSDKv4/Palette.cpp; sourceTree = SOURCE_ROOT; };
+		C962196725898BF600B47AB3 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Object.cpp; path = RSDKv4/Object.cpp; sourceTree = SOURCE_ROOT; };
+		C962196825898BF600B47AB3 /* Math.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Math.cpp; path = RSDKv4/Math.cpp; sourceTree = SOURCE_ROOT; };
+		C962196925898BF600B47AB3 /* Text.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Text.cpp; path = RSDKv4/Text.cpp; sourceTree = SOURCE_ROOT; };
+		C962196A25898BF600B47AB3 /* Collision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Collision.cpp; path = RSDKv4/Collision.cpp; sourceTree = SOURCE_ROOT; };
+		C962196B25898BF600B47AB3 /* Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Reader.cpp; path = RSDKv4/Reader.cpp; sourceTree = SOURCE_ROOT; };
+		C975E69826E3190B00F09AD4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C975E69A26E3194F00F09AD4 /* InstructionsScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = InstructionsScreen.hpp; path = NativeObjects/InstructionsScreen.hpp; sourceTree = "<group>"; };
+		C975E69B26E3194F00F09AD4 /* MenuControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MenuControl.hpp; path = NativeObjects/MenuControl.hpp; sourceTree = "<group>"; };
+		C975E69C26E3194F00F09AD4 /* AchievementsMenu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AchievementsMenu.hpp; path = NativeObjects/AchievementsMenu.hpp; sourceTree = "<group>"; };
+		C975E69D26E3194F00F09AD4 /* ModInfoButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ModInfoButton.hpp; path = NativeObjects/ModInfoButton.hpp; sourceTree = "<group>"; };
+		C975E69E26E3195000F09AD4 /* AchievementDisplay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AchievementDisplay.hpp; path = NativeObjects/AchievementDisplay.hpp; sourceTree = "<group>"; };
+		C975E69F26E3195000F09AD4 /* OptionsMenu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OptionsMenu.hpp; path = NativeObjects/OptionsMenu.hpp; sourceTree = "<group>"; };
+		C975E6A026E3195000F09AD4 /* StartGameButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StartGameButton.hpp; path = NativeObjects/StartGameButton.hpp; sourceTree = "<group>"; };
+		C975E6A126E3195000F09AD4 /* VirtualDPad.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VirtualDPad.hpp; path = NativeObjects/VirtualDPad.hpp; sourceTree = "<group>"; };
+		C975E6A226E3195000F09AD4 /* RecordsScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RecordsScreen.hpp; path = NativeObjects/RecordsScreen.hpp; sourceTree = "<group>"; };
+		C975E6A326E3195000F09AD4 /* AchievementsButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AchievementsButton.hpp; path = NativeObjects/AchievementsButton.hpp; sourceTree = "<group>"; };
+		C975E6A426E3195000F09AD4 /* VirtualDPadM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VirtualDPadM.hpp; path = NativeObjects/VirtualDPadM.hpp; sourceTree = "<group>"; };
+		C975E6A526E3195000F09AD4 /* PushButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PushButton.hpp; path = NativeObjects/PushButton.hpp; sourceTree = "<group>"; };
+		C975E6A626E3195000F09AD4 /* ZoneButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ZoneButton.hpp; path = NativeObjects/ZoneButton.hpp; sourceTree = "<group>"; };
+		C975E6A726E3195000F09AD4 /* ModsMenu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ModsMenu.hpp; path = NativeObjects/ModsMenu.hpp; sourceTree = "<group>"; };
+		C975E6A826E3195000F09AD4 /* StaffCredits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StaffCredits.hpp; path = NativeObjects/StaffCredits.hpp; sourceTree = "<group>"; };
+		C975E6A926E3195000F09AD4 /* SegaSplash.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SegaSplash.hpp; path = NativeObjects/SegaSplash.hpp; sourceTree = "<group>"; };
+		C975E6AA26E3195100F09AD4 /* NativeObjects.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = NativeObjects.hpp; path = NativeObjects/NativeObjects.hpp; sourceTree = "<group>"; };
+		C975E6AB26E3195100F09AD4 /* MenuBG.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MenuBG.hpp; path = NativeObjects/MenuBG.hpp; sourceTree = "<group>"; };
+		C975E6AC26E3195100F09AD4 /* ModsButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ModsButton.hpp; path = NativeObjects/ModsButton.hpp; sourceTree = "<group>"; };
+		C975E6AD26E3195100F09AD4 /* SubMenuButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SubMenuButton.hpp; path = NativeObjects/SubMenuButton.hpp; sourceTree = "<group>"; };
+		C975E6AE26E3195100F09AD4 /* SettingsScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SettingsScreen.hpp; path = NativeObjects/SettingsScreen.hpp; sourceTree = "<group>"; };
+		C975E6AF26E3195100F09AD4 /* DialogPanel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DialogPanel.hpp; path = NativeObjects/DialogPanel.hpp; sourceTree = "<group>"; };
+		C975E6B026E3195100F09AD4 /* MultiplayerButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MultiplayerButton.hpp; path = NativeObjects/MultiplayerButton.hpp; sourceTree = "<group>"; };
+		C975E6B126E3195100F09AD4 /* BackButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BackButton.hpp; path = NativeObjects/BackButton.hpp; sourceTree = "<group>"; };
+		C975E6B226E3195100F09AD4 /* MultiplayerScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MultiplayerScreen.hpp; path = NativeObjects/MultiplayerScreen.hpp; sourceTree = "<group>"; };
+		C975E6B326E3195100F09AD4 /* AboutScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AboutScreen.hpp; path = NativeObjects/AboutScreen.hpp; sourceTree = "<group>"; };
+		C975E6B426E3195100F09AD4 /* PauseMenu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PauseMenu.hpp; path = NativeObjects/PauseMenu.hpp; sourceTree = "<group>"; };
+		C975E6B526E3195100F09AD4 /* TextLabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TextLabel.hpp; path = NativeObjects/TextLabel.hpp; sourceTree = "<group>"; };
+		C975E6B626E3195100F09AD4 /* CWSplash.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CWSplash.hpp; path = NativeObjects/CWSplash.hpp; sourceTree = "<group>"; };
+		C975E6B726E3195100F09AD4 /* LeaderboardsButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LeaderboardsButton.hpp; path = NativeObjects/LeaderboardsButton.hpp; sourceTree = "<group>"; };
+		C975E6B826E3195200F09AD4 /* CreditText.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CreditText.hpp; path = NativeObjects/CreditText.hpp; sourceTree = "<group>"; };
+		C975E6B926E3195200F09AD4 /* SaveSelect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SaveSelect.hpp; path = NativeObjects/SaveSelect.hpp; sourceTree = "<group>"; };
+		C975E6BA26E3195200F09AD4 /* FadeScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FadeScreen.hpp; path = NativeObjects/FadeScreen.hpp; sourceTree = "<group>"; };
+		C975E6BB26E3195200F09AD4 /* SegaIDButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SegaIDButton.hpp; path = NativeObjects/SegaIDButton.hpp; sourceTree = "<group>"; };
+		C975E6BC26E3195200F09AD4 /* PlayerSelectScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PlayerSelectScreen.hpp; path = NativeObjects/PlayerSelectScreen.hpp; sourceTree = "<group>"; };
+		C975E6BD26E3195200F09AD4 /* OptionsButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OptionsButton.hpp; path = NativeObjects/OptionsButton.hpp; sourceTree = "<group>"; };
+		C975E6BE26E3195200F09AD4 /* MultiplayerHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MultiplayerHandler.hpp; path = NativeObjects/MultiplayerHandler.hpp; sourceTree = "<group>"; };
+		C975E6BF26E3195200F09AD4 /* RetroGameLoop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RetroGameLoop.hpp; path = NativeObjects/RetroGameLoop.hpp; sourceTree = "<group>"; };
+		C975E6C026E3195200F09AD4 /* TimeAttackButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TimeAttackButton.hpp; path = NativeObjects/TimeAttackButton.hpp; sourceTree = "<group>"; };
+		C975E6C126E3195200F09AD4 /* TimeAttack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TimeAttack.hpp; path = NativeObjects/TimeAttack.hpp; sourceTree = "<group>"; };
+		C975E6C226E3195200F09AD4 /* TitleScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TitleScreen.hpp; path = NativeObjects/TitleScreen.hpp; sourceTree = "<group>"; };
+		C975E6C326E3197100F09AD4 /* StartGameButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StartGameButton.cpp; path = NativeObjects/StartGameButton.cpp; sourceTree = "<group>"; };
+		C975E6C426E3197100F09AD4 /* AboutScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AboutScreen.cpp; path = NativeObjects/AboutScreen.cpp; sourceTree = "<group>"; };
+		C975E6C526E3197100F09AD4 /* ModsButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModsButton.cpp; path = NativeObjects/ModsButton.cpp; sourceTree = "<group>"; };
+		C975E6C626E3197200F09AD4 /* RetroGameLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RetroGameLoop.cpp; path = NativeObjects/RetroGameLoop.cpp; sourceTree = "<group>"; };
+		C975E6C726E3197200F09AD4 /* AchievementsButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AchievementsButton.cpp; path = NativeObjects/AchievementsButton.cpp; sourceTree = "<group>"; };
+		C975E6C826E3197200F09AD4 /* VirtualDPadM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VirtualDPadM.cpp; path = NativeObjects/VirtualDPadM.cpp; sourceTree = "<group>"; };
+		C975E6C926E3197200F09AD4 /* OptionsButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OptionsButton.cpp; path = NativeObjects/OptionsButton.cpp; sourceTree = "<group>"; };
+		C975E6CA26E3197200F09AD4 /* FadeScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FadeScreen.cpp; path = NativeObjects/FadeScreen.cpp; sourceTree = "<group>"; };
+		C975E6CB26E3197200F09AD4 /* DialogPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DialogPanel.cpp; path = NativeObjects/DialogPanel.cpp; sourceTree = "<group>"; };
+		C975E6CC26E3197200F09AD4 /* InstructionsScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InstructionsScreen.cpp; path = NativeObjects/InstructionsScreen.cpp; sourceTree = "<group>"; };
+		C975E6CD26E3197200F09AD4 /* MultiplayerButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MultiplayerButton.cpp; path = NativeObjects/MultiplayerButton.cpp; sourceTree = "<group>"; };
+		C975E6CE26E3197200F09AD4 /* SubMenuButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SubMenuButton.cpp; path = NativeObjects/SubMenuButton.cpp; sourceTree = "<group>"; };
+		C975E6CF26E3197200F09AD4 /* PauseMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PauseMenu.cpp; path = NativeObjects/PauseMenu.cpp; sourceTree = "<group>"; };
+		C975E6D026E3197200F09AD4 /* RecordsScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RecordsScreen.cpp; path = NativeObjects/RecordsScreen.cpp; sourceTree = "<group>"; };
+		C975E6D126E3197200F09AD4 /* ModInfoButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModInfoButton.cpp; path = NativeObjects/ModInfoButton.cpp; sourceTree = "<group>"; };
+		C975E6D226E3197200F09AD4 /* CreditText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CreditText.cpp; path = NativeObjects/CreditText.cpp; sourceTree = "<group>"; };
+		C975E6D326E3197300F09AD4 /* ZoneButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZoneButton.cpp; path = NativeObjects/ZoneButton.cpp; sourceTree = "<group>"; };
+		C975E6D426E3197300F09AD4 /* MenuControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuControl.cpp; path = NativeObjects/MenuControl.cpp; sourceTree = "<group>"; };
+		C975E6D526E3197300F09AD4 /* TimeAttackButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TimeAttackButton.cpp; path = NativeObjects/TimeAttackButton.cpp; sourceTree = "<group>"; };
+		C975E6D626E3197300F09AD4 /* VirtualDPad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VirtualDPad.cpp; path = NativeObjects/VirtualDPad.cpp; sourceTree = "<group>"; };
+		C975E6D726E3197300F09AD4 /* PlayerSelectScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayerSelectScreen.cpp; path = NativeObjects/PlayerSelectScreen.cpp; sourceTree = "<group>"; };
+		C975E6D826E3197300F09AD4 /* SegaIDButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SegaIDButton.cpp; path = NativeObjects/SegaIDButton.cpp; sourceTree = "<group>"; };
+		C975E6D926E3197300F09AD4 /* StaffCredits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StaffCredits.cpp; path = NativeObjects/StaffCredits.cpp; sourceTree = "<group>"; };
+		C975E6DA26E3197300F09AD4 /* PushButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PushButton.cpp; path = NativeObjects/PushButton.cpp; sourceTree = "<group>"; };
+		C975E6DB26E3197300F09AD4 /* MenuBG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuBG.cpp; path = NativeObjects/MenuBG.cpp; sourceTree = "<group>"; };
+		C975E6DC26E3197300F09AD4 /* LeaderboardsButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LeaderboardsButton.cpp; path = NativeObjects/LeaderboardsButton.cpp; sourceTree = "<group>"; };
+		C975E6DD26E3197300F09AD4 /* TextLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TextLabel.cpp; path = NativeObjects/TextLabel.cpp; sourceTree = "<group>"; };
+		C975E6DE26E3197300F09AD4 /* BackButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BackButton.cpp; path = NativeObjects/BackButton.cpp; sourceTree = "<group>"; };
+		C975E6DF26E3197300F09AD4 /* CWSplash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CWSplash.cpp; path = NativeObjects/CWSplash.cpp; sourceTree = "<group>"; };
+		C975E6E026E3197300F09AD4 /* OptionsMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OptionsMenu.cpp; path = NativeObjects/OptionsMenu.cpp; sourceTree = "<group>"; };
+		C975E6E126E3197300F09AD4 /* AchievementDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AchievementDisplay.cpp; path = NativeObjects/AchievementDisplay.cpp; sourceTree = "<group>"; };
+		C975E6E226E3197400F09AD4 /* TitleScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TitleScreen.cpp; path = NativeObjects/TitleScreen.cpp; sourceTree = "<group>"; };
+		C975E6E326E3197400F09AD4 /* ModsMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModsMenu.cpp; path = NativeObjects/ModsMenu.cpp; sourceTree = "<group>"; };
+		C975E6E426E3197400F09AD4 /* AchievementsMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AchievementsMenu.cpp; path = NativeObjects/AchievementsMenu.cpp; sourceTree = "<group>"; };
+		C975E6E526E3197400F09AD4 /* SegaSplash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SegaSplash.cpp; path = NativeObjects/SegaSplash.cpp; sourceTree = "<group>"; };
+		C975E6E626E3197400F09AD4 /* SettingsScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SettingsScreen.cpp; path = NativeObjects/SettingsScreen.cpp; sourceTree = "<group>"; };
+		C975E6E726E3197400F09AD4 /* TimeAttack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TimeAttack.cpp; path = NativeObjects/TimeAttack.cpp; sourceTree = "<group>"; };
+		C975E6E826E3197400F09AD4 /* MultiplayerScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MultiplayerScreen.cpp; path = NativeObjects/MultiplayerScreen.cpp; sourceTree = "<group>"; };
+		C975E6E926E3197400F09AD4 /* SaveSelect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SaveSelect.cpp; path = NativeObjects/SaveSelect.cpp; sourceTree = "<group>"; };
+		C975E6EA26E3197400F09AD4 /* MultiplayerHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MultiplayerHandler.cpp; path = NativeObjects/MultiplayerHandler.cpp; sourceTree = "<group>"; };
+		C975E71326E3199000F09AD4 /* Networking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Networking.cpp; sourceTree = "<group>"; };
+		C975E71426E3199000F09AD4 /* ModAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModAPI.cpp; sourceTree = "<group>"; };
+		C975E71526E3199000F09AD4 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		C975E71926E319A600F09AD4 /* ModAPI.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ModAPI.hpp; sourceTree = "<group>"; };
+		C975E71A26E319A600F09AD4 /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		C975E71B26E319A600F09AD4 /* Networking.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Networking.hpp; sourceTree = "<group>"; };
+		C975E71E26E31AA800F09AD4 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_image.h; path = "dependencies/all/stb-image/stb_image.h"; sourceTree = SOURCE_ROOT; };
+		C975E71F26E31AB200F09AD4 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml2.h; path = dependencies/all/tinyxml2/tinyxml2.h; sourceTree = SOURCE_ROOT; };
+		C975E72026E31AC000F09AD4 /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml2.cpp; path = dependencies/all/tinyxml2/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E1BEFB829FCABB100A1C6D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1BF03429FCAFE400A1C6D8 /* SDL2.framework in Frameworks */,
+				9E1BF03629FCAFE400A1C6D8 /* AppKit.framework in Frameworks */,
+				9E1BF03029FCAFE400A1C6D8 /* Ogg.framework in Frameworks */,
+				9E372A0D29FF1F0B00A22DAD /* SDL2.framework in Frameworks */,
+				9E1BF03729FCAFE400A1C6D8 /* OpenGL.framework in Frameworks */,
+				9E1BF03229FCAFE400A1C6D8 /* Vorbis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E0381F129EE366300629FE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0883D29FA0CB600163B50 /* Ogg.framework */,
+				9EA0883F29FA0CB600163B50 /* Vorbis.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E0381F929EE36AE00629FE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E03820729EE36AE00629FE3 /* SDL2.framework */,
+				9E03820929EE36AE00629FE3 /* SDL2.framework */,
+				9E03820B29EE36AE00629FE3 /* SDL2.framework */,
+				9E03820F29EE36AE00629FE3 /* libSDL2.a */,
+				9E03821129EE36AE00629FE3 /* libSDL2.a */,
+				9E03821329EE36AE00629FE3 /* libSDL2.a */,
+				9E03821529EE36AE00629FE3 /* libSDL2.dylib */,
+				9E03821729EE36AE00629FE3 /* libSDL2.dylib */,
+				9E03821929EE36AE00629FE3 /* libSDL2.dylib */,
+				9E03821B29EE36AE00629FE3 /* SDL2 */,
+				9E372A0829FF1F0B00A22DAD /* hidapi.framework */,
+				9E372A0A29FF1F0B00A22DAD /* hidapi.framework */,
+				9E372A0C29FF1F0B00A22DAD /* hidapi.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C92835312646219900D51CCE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C975E71F26E31AB200F09AD4 /* tinyxml2.h */,
+				C975E71E26E31AA800F09AD4 /* stb_image.h */,
+				C9283535264621C800D51CCE /* cocoaHelpers.hpp */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C92835322646219F00D51CCE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C9283533264621BB00D51CCE /* cocoaHelpers.mm */,
+				9E1BEFB229FCAA8C00A1C6D8 /* IndirectMain.cpp */,
+				9E1BEFB329FCAA8C00A1C6D8 /* IndirectMain.h */,
+				9E1BEFB429FCAA8C00A1C6D8 /* main.mm */,
+				C975E72026E31AC000F09AD4 /* tinyxml2.cpp */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C962191025898A9300B47AB3 = {
+			isa = PBXGroup;
+			children = (
+				9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */,
+				9E0381F029EE366300629FE3 /* OggAndVorbis.xcodeproj */,
+				C962191B25898A9300B47AB3 /* RSDKv4 */,
+				C962191A25898A9300B47AB3 /* Products */,
+				C96219822589B10600B47AB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C962191A25898A9300B47AB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E1BEFBB29FCABB100A1C6D8 /* RSDKv4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C962191B25898A9300B47AB3 /* RSDKv4 */ = {
+			isa = PBXGroup;
+			children = (
+				C962194025898B6E00B47AB3 /* Header Files */,
+				C962193F25898B6700B47AB3 /* Source Files */,
+				C962193625898B0A00B47AB3 /* Assets.xcassets */,
+			);
+			path = RSDKv4;
+			sourceTree = "<group>";
+		};
+		C962193F25898B6700B47AB3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C975E71426E3199000F09AD4 /* ModAPI.cpp */,
+				C975E71326E3199000F09AD4 /* Networking.cpp */,
+				C975E71526E3199000F09AD4 /* Renderer.cpp */,
+				C92835322646219F00D51CCE /* Helpers */,
+				C96219AB25947C8F00B47AB3 /* Native Objects */,
+				C962195B25898BF500B47AB3 /* Animation.cpp */,
+				C962195625898BF500B47AB3 /* Audio.cpp */,
+				C962196A25898BF600B47AB3 /* Collision.cpp */,
+				C962195725898BF500B47AB3 /* Debug.cpp */,
+				C962195C25898BF500B47AB3 /* Drawing.cpp */,
+				C962195F25898BF600B47AB3 /* Ini.cpp */,
+				C962195D25898BF500B47AB3 /* Input.cpp */,
+				C962196325898BF600B47AB3 /* main.cpp */,
+				C962196825898BF600B47AB3 /* Math.cpp */,
+				C962196725898BF600B47AB3 /* Object.cpp */,
+				C962196625898BF600B47AB3 /* Palette.cpp */,
+				C962196B25898BF600B47AB3 /* Reader.cpp */,
+				C962195825898BF500B47AB3 /* RetroEngine.cpp */,
+				C962195925898BF500B47AB3 /* Scene.cpp */,
+				C962196025898BF600B47AB3 /* Scene3D.cpp */,
+				C962196525898BF600B47AB3 /* Script.cpp */,
+				C962195A25898BF500B47AB3 /* Sprite.cpp */,
+				C962195E25898BF500B47AB3 /* String.cpp */,
+				C962196925898BF600B47AB3 /* Text.cpp */,
+				C962196125898BF600B47AB3 /* Userdata.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C962194025898B6E00B47AB3 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				C975E71926E319A600F09AD4 /* ModAPI.hpp */,
+				C975E71B26E319A600F09AD4 /* Networking.hpp */,
+				C975E71A26E319A600F09AD4 /* Renderer.hpp */,
+				C92835312646219900D51CCE /* Helpers */,
+				C96219AC25947CA100B47AB3 /* Native Objects */,
+				C962195525898BCE00B47AB3 /* Animation.hpp */,
+				C962194325898BCD00B47AB3 /* Audio.hpp */,
+				C962194625898BCD00B47AB3 /* Collision.hpp */,
+				C962194E25898BCD00B47AB3 /* Debug.hpp */,
+				C962194F25898BCD00B47AB3 /* Drawing.hpp */,
+				C962194525898BCD00B47AB3 /* Ini.hpp */,
+				C962194425898BCD00B47AB3 /* Input.hpp */,
+				C962195425898BCE00B47AB3 /* Math.hpp */,
+				C962195025898BCD00B47AB3 /* Object.hpp */,
+				C962194A25898BCD00B47AB3 /* Palette.hpp */,
+				C962195225898BCD00B47AB3 /* Reader.hpp */,
+				C962194725898BCD00B47AB3 /* RetroEngine.hpp */,
+				C962194C25898BCD00B47AB3 /* Scene.hpp */,
+				C962195125898BCD00B47AB3 /* Scene3D.hpp */,
+				C962194225898BCD00B47AB3 /* Script.hpp */,
+				C962194825898BCD00B47AB3 /* Sprite.hpp */,
+				C962194B25898BCD00B47AB3 /* String.hpp */,
+				C962194125898BCD00B47AB3 /* Text.hpp */,
+				C962194D25898BCD00B47AB3 /* Userdata.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C96219822589B10600B47AB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0885129FA11AF00163B50 /* AppKit.framework */,
+				C975E69826E3190B00F09AD4 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C96219AB25947C8F00B47AB3 /* Native Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C975E6C426E3197100F09AD4 /* AboutScreen.cpp */,
+				C975E6E126E3197300F09AD4 /* AchievementDisplay.cpp */,
+				C975E6C726E3197200F09AD4 /* AchievementsButton.cpp */,
+				C975E6E426E3197400F09AD4 /* AchievementsMenu.cpp */,
+				C975E6DE26E3197300F09AD4 /* BackButton.cpp */,
+				C975E6D226E3197200F09AD4 /* CreditText.cpp */,
+				C975E6DF26E3197300F09AD4 /* CWSplash.cpp */,
+				C975E6CB26E3197200F09AD4 /* DialogPanel.cpp */,
+				C975E6CA26E3197200F09AD4 /* FadeScreen.cpp */,
+				C975E6CC26E3197200F09AD4 /* InstructionsScreen.cpp */,
+				C975E6DC26E3197300F09AD4 /* LeaderboardsButton.cpp */,
+				C975E6DB26E3197300F09AD4 /* MenuBG.cpp */,
+				C975E6D426E3197300F09AD4 /* MenuControl.cpp */,
+				C975E6D126E3197200F09AD4 /* ModInfoButton.cpp */,
+				C975E6C526E3197100F09AD4 /* ModsButton.cpp */,
+				C975E6E326E3197400F09AD4 /* ModsMenu.cpp */,
+				C975E6CD26E3197200F09AD4 /* MultiplayerButton.cpp */,
+				C975E6EA26E3197400F09AD4 /* MultiplayerHandler.cpp */,
+				C975E6E826E3197400F09AD4 /* MultiplayerScreen.cpp */,
+				C975E6C926E3197200F09AD4 /* OptionsButton.cpp */,
+				C975E6E026E3197300F09AD4 /* OptionsMenu.cpp */,
+				C975E6CF26E3197200F09AD4 /* PauseMenu.cpp */,
+				C975E6D726E3197300F09AD4 /* PlayerSelectScreen.cpp */,
+				C975E6DA26E3197300F09AD4 /* PushButton.cpp */,
+				C975E6D026E3197200F09AD4 /* RecordsScreen.cpp */,
+				C975E6C626E3197200F09AD4 /* RetroGameLoop.cpp */,
+				C975E6E926E3197400F09AD4 /* SaveSelect.cpp */,
+				C975E6D826E3197300F09AD4 /* SegaIDButton.cpp */,
+				C975E6E526E3197400F09AD4 /* SegaSplash.cpp */,
+				C975E6E626E3197400F09AD4 /* SettingsScreen.cpp */,
+				C975E6D926E3197300F09AD4 /* StaffCredits.cpp */,
+				C975E6C326E3197100F09AD4 /* StartGameButton.cpp */,
+				C975E6CE26E3197200F09AD4 /* SubMenuButton.cpp */,
+				C975E6DD26E3197300F09AD4 /* TextLabel.cpp */,
+				C975E6E726E3197400F09AD4 /* TimeAttack.cpp */,
+				C975E6D526E3197300F09AD4 /* TimeAttackButton.cpp */,
+				C975E6E226E3197400F09AD4 /* TitleScreen.cpp */,
+				C975E6D626E3197300F09AD4 /* VirtualDPad.cpp */,
+				C975E6C826E3197200F09AD4 /* VirtualDPadM.cpp */,
+				C975E6D326E3197300F09AD4 /* ZoneButton.cpp */,
+			);
+			name = "Native Objects";
+			sourceTree = "<group>";
+		};
+		C96219AC25947CA100B47AB3 /* Native Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C975E6B326E3195100F09AD4 /* AboutScreen.hpp */,
+				C975E69E26E3195000F09AD4 /* AchievementDisplay.hpp */,
+				C975E6A326E3195000F09AD4 /* AchievementsButton.hpp */,
+				C975E69C26E3194F00F09AD4 /* AchievementsMenu.hpp */,
+				C975E6B126E3195100F09AD4 /* BackButton.hpp */,
+				C975E6B826E3195200F09AD4 /* CreditText.hpp */,
+				C975E6B626E3195100F09AD4 /* CWSplash.hpp */,
+				C975E6AF26E3195100F09AD4 /* DialogPanel.hpp */,
+				C975E6BA26E3195200F09AD4 /* FadeScreen.hpp */,
+				C975E69A26E3194F00F09AD4 /* InstructionsScreen.hpp */,
+				C975E6B726E3195100F09AD4 /* LeaderboardsButton.hpp */,
+				C975E6AB26E3195100F09AD4 /* MenuBG.hpp */,
+				C975E69B26E3194F00F09AD4 /* MenuControl.hpp */,
+				C975E69D26E3194F00F09AD4 /* ModInfoButton.hpp */,
+				C975E6AC26E3195100F09AD4 /* ModsButton.hpp */,
+				C975E6A726E3195000F09AD4 /* ModsMenu.hpp */,
+				C975E6B026E3195100F09AD4 /* MultiplayerButton.hpp */,
+				C975E6BE26E3195200F09AD4 /* MultiplayerHandler.hpp */,
+				C975E6B226E3195100F09AD4 /* MultiplayerScreen.hpp */,
+				C975E6AA26E3195100F09AD4 /* NativeObjects.hpp */,
+				C975E6BD26E3195200F09AD4 /* OptionsButton.hpp */,
+				C975E69F26E3195000F09AD4 /* OptionsMenu.hpp */,
+				C975E6B426E3195100F09AD4 /* PauseMenu.hpp */,
+				C975E6BC26E3195200F09AD4 /* PlayerSelectScreen.hpp */,
+				C975E6A526E3195000F09AD4 /* PushButton.hpp */,
+				C975E6A226E3195000F09AD4 /* RecordsScreen.hpp */,
+				C975E6BF26E3195200F09AD4 /* RetroGameLoop.hpp */,
+				C975E6B926E3195200F09AD4 /* SaveSelect.hpp */,
+				C975E6BB26E3195200F09AD4 /* SegaIDButton.hpp */,
+				C975E6A926E3195000F09AD4 /* SegaSplash.hpp */,
+				C975E6AE26E3195100F09AD4 /* SettingsScreen.hpp */,
+				C975E6A826E3195000F09AD4 /* StaffCredits.hpp */,
+				C975E6A026E3195000F09AD4 /* StartGameButton.hpp */,
+				C975E6AD26E3195100F09AD4 /* SubMenuButton.hpp */,
+				C975E6B526E3195100F09AD4 /* TextLabel.hpp */,
+				C975E6C126E3195200F09AD4 /* TimeAttack.hpp */,
+				C975E6C026E3195200F09AD4 /* TimeAttackButton.hpp */,
+				C975E6C226E3195200F09AD4 /* TitleScreen.hpp */,
+				C975E6A126E3195000F09AD4 /* VirtualDPad.hpp */,
+				C975E6A426E3195000F09AD4 /* VirtualDPadM.hpp */,
+				C975E6A626E3195000F09AD4 /* ZoneButton.hpp */,
+			);
+			name = "Native Objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E1BEFBA29FCABB100A1C6D8 /* RSDKv4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E1BEFC829FCABB200A1C6D8 /* Build configuration list for PBXNativeTarget "RSDKv4" */;
+			buildPhases = (
+				9E1BEFB729FCABB100A1C6D8 /* Sources */,
+				9E1BEFB829FCABB100A1C6D8 /* Frameworks */,
+				9E1BEFB929FCABB100A1C6D8 /* Resources */,
+				9E1BF03829FCAFE400A1C6D8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSDKv4;
+			productName = RSDKv4;
+			productReference = 9E1BEFBB29FCABB100A1C6D8 /* RSDKv4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C962191125898A9300B47AB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = Rubberduckycooly;
+				TargetAttributes = {
+					9E1BEFBA29FCABB100A1C6D8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = C962191425898A9300B47AB3 /* Build configuration list for PBXProject "RSDKv4" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C962191025898A9300B47AB3;
+			productRefGroup = C962191A25898A9300B47AB3 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9E0381F129EE366300629FE3 /* Products */;
+					ProjectRef = 9E0381F029EE366300629FE3 /* OggAndVorbis.xcodeproj */;
+				},
+				{
+					ProductGroup = 9E0381F929EE36AE00629FE3 /* Products */;
+					ProjectRef = 9E0381F829EE36AE00629FE3 /* SDL.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9E1BEFBA29FCABB100A1C6D8 /* RSDKv4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9E03820729EE36AE00629FE3 /* SDL2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDL2.framework;
+			remoteRef = 9E03820629EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E03820929EE36AE00629FE3 /* SDL2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDL2.framework;
+			remoteRef = 9E03820829EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E03820B29EE36AE00629FE3 /* SDL2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDL2.framework;
+			remoteRef = 9E03820A29EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E03820F29EE36AE00629FE3 /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = 9E03820E29EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E03821129EE36AE00629FE3 /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = 9E03821029EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E03821329EE36AE00629FE3 /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = 9E03821229EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E03821529EE36AE00629FE3 /* libSDL2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSDL2.dylib;
+			remoteRef = 9E03821429EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E03821729EE36AE00629FE3 /* libSDL2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSDL2.dylib;
+			remoteRef = 9E03821629EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E03821929EE36AE00629FE3 /* libSDL2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSDL2.dylib;
+			remoteRef = 9E03821829EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E03821B29EE36AE00629FE3 /* SDL2 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = SDL2;
+			remoteRef = 9E03821A29EE36AE00629FE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E372A0829FF1F0B00A22DAD /* hidapi.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = hidapi.framework;
+			remoteRef = 9E372A0729FF1F0B00A22DAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E372A0A29FF1F0B00A22DAD /* hidapi.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = hidapi.framework;
+			remoteRef = 9E372A0929FF1F0B00A22DAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E372A0C29FF1F0B00A22DAD /* hidapi.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = hidapi.framework;
+			remoteRef = 9E372A0B29FF1F0B00A22DAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9EA0883D29FA0CB600163B50 /* Ogg.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Ogg.framework;
+			remoteRef = 9EA0883C29FA0CB600163B50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9EA0883F29FA0CB600163B50 /* Vorbis.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Vorbis.framework;
+			remoteRef = 9EA0883E29FA0CB600163B50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E1BEFB929FCABB100A1C6D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1BF03929FCB18900A1C6D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E1BEFB729FCABB100A1C6D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1BEFD729FCACF300A1C6D8 /* ModsMenu.cpp in Sources */,
+				9E1BEFE029FCACF300A1C6D8 /* LeaderboardsButton.cpp in Sources */,
+				9E1BF01929FCAD0500A1C6D8 /* Palette.cpp in Sources */,
+				9E1BEFEE29FCACF300A1C6D8 /* OptionsButton.cpp in Sources */,
+				9E1BEFE229FCACF300A1C6D8 /* RetroGameLoop.cpp in Sources */,
+				9E1BEFF829FCACF300A1C6D8 /* TimeAttackButton.cpp in Sources */,
+				9E1BF01B29FCAD0500A1C6D8 /* Sprite.cpp in Sources */,
+				9E1BEFE629FCACF300A1C6D8 /* PushButton.cpp in Sources */,
+				9E1BEFE829FCACF300A1C6D8 /* AchievementDisplay.cpp in Sources */,
+				9E1BEFD029FCACEC00A1C6D8 /* main.mm in Sources */,
+				9E1BF02029FCAD0500A1C6D8 /* Script.cpp in Sources */,
+				9E1BEFF029FCACF300A1C6D8 /* ZoneButton.cpp in Sources */,
+				9E1BEFED29FCACF300A1C6D8 /* DialogPanel.cpp in Sources */,
+				9E1BF00E29FCAD0000A1C6D8 /* Collision.cpp in Sources */,
+				9E1BEFDD29FCACF300A1C6D8 /* MultiplayerHandler.cpp in Sources */,
+				9E1BF01429FCAD0000A1C6D8 /* Ini.cpp in Sources */,
+				9E1BEFF329FCACF300A1C6D8 /* MultiplayerButton.cpp in Sources */,
+				9E1BF01D29FCAD0500A1C6D8 /* String.cpp in Sources */,
+				9E1BEFCD29FCACE200A1C6D8 /* Networking.cpp in Sources */,
+				9E1BEFD429FCACF300A1C6D8 /* ModsButton.cpp in Sources */,
+				9E1BEFF229FCACF300A1C6D8 /* InstructionsScreen.cpp in Sources */,
+				9E1BEFDC29FCACF300A1C6D8 /* TitleScreen.cpp in Sources */,
+				9E1BF01F29FCAD0500A1C6D8 /* Scene3D.cpp in Sources */,
+				9E1BEFCC29FCACE200A1C6D8 /* Renderer.cpp in Sources */,
+				9E1BEFF129FCACF300A1C6D8 /* PlayerSelectScreen.cpp in Sources */,
+				9E1BEFCB29FCACE200A1C6D8 /* ModAPI.cpp in Sources */,
+				9E1BEFE329FCACF300A1C6D8 /* StaffCredits.cpp in Sources */,
+				9E1BF01129FCAD0000A1C6D8 /* Input.cpp in Sources */,
+				9E1BF01029FCAD0000A1C6D8 /* Debug.cpp in Sources */,
+				9E1BEFDF29FCACF300A1C6D8 /* VirtualDPad.cpp in Sources */,
+				9E1BEFD929FCACF300A1C6D8 /* SegaIDButton.cpp in Sources */,
+				9E1BEFE129FCACF300A1C6D8 /* PauseMenu.cpp in Sources */,
+				9E1BF01E29FCAD0500A1C6D8 /* Text.cpp in Sources */,
+				9E1BF00F29FCAD0000A1C6D8 /* Animation.cpp in Sources */,
+				9E1BEFE429FCACF300A1C6D8 /* VirtualDPadM.cpp in Sources */,
+				9E1BEFF529FCACF300A1C6D8 /* SegaSplash.cpp in Sources */,
+				9E1BEFD329FCACF300A1C6D8 /* ModInfoButton.cpp in Sources */,
+				9E1BEFDA29FCACF300A1C6D8 /* StartGameButton.cpp in Sources */,
+				9E1BEFCF29FCACE600A1C6D8 /* IndirectMain.cpp in Sources */,
+				9E1BEFD529FCACF300A1C6D8 /* OptionsMenu.cpp in Sources */,
+				9E1BEFDE29FCACF300A1C6D8 /* SubMenuButton.cpp in Sources */,
+				9E1BEFE529FCACF300A1C6D8 /* SettingsScreen.cpp in Sources */,
+				9E1BEFD629FCACF300A1C6D8 /* RecordsScreen.cpp in Sources */,
+				9E1BEFCE29FCACE600A1C6D8 /* cocoaHelpers.mm in Sources */,
+				9E1BEFD829FCACF300A1C6D8 /* CreditText.cpp in Sources */,
+				9E1BEFE729FCACF300A1C6D8 /* AchievementsButton.cpp in Sources */,
+				9E1BEFF629FCACF300A1C6D8 /* MultiplayerScreen.cpp in Sources */,
+				9E1BEFF729FCACF300A1C6D8 /* SaveSelect.cpp in Sources */,
+				9E1BEFEA29FCACF300A1C6D8 /* AboutScreen.cpp in Sources */,
+				9E1BEFEB29FCACF300A1C6D8 /* MenuControl.cpp in Sources */,
+				9E1BEFF929FCACF300A1C6D8 /* TimeAttack.cpp in Sources */,
+				9E1BF01229FCAD0000A1C6D8 /* Audio.cpp in Sources */,
+				9E1BF01529FCAD0500A1C6D8 /* RetroEngine.cpp in Sources */,
+				9E1BF01329FCAD0000A1C6D8 /* Drawing.cpp in Sources */,
+				9E1BEFD129FCACEC00A1C6D8 /* tinyxml2.cpp in Sources */,
+				9E1BEFD229FCACF300A1C6D8 /* FadeScreen.cpp in Sources */,
+				9E1BF01729FCAD0500A1C6D8 /* Object.cpp in Sources */,
+				9E1BEFEF29FCACF300A1C6D8 /* CWSplash.cpp in Sources */,
+				9E1BEFF429FCACF300A1C6D8 /* BackButton.cpp in Sources */,
+				9E1BEFEC29FCACF300A1C6D8 /* MenuBG.cpp in Sources */,
+				9E1BF01C29FCAD0500A1C6D8 /* Scene.cpp in Sources */,
+				9E1BEFE929FCACF300A1C6D8 /* AchievementsMenu.cpp in Sources */,
+				9E1BF01629FCAD0500A1C6D8 /* Userdata.cpp in Sources */,
+				9E1BEFDB29FCACF300A1C6D8 /* TextLabel.cpp in Sources */,
+				9E1BF01A29FCAD0500A1C6D8 /* Reader.cpp in Sources */,
+				9E1BF01829FCAD0500A1C6D8 /* Math.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9E1BEFC929FCABB200A1C6D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = dependencies/mac/RSDKv4.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/dependencies/all/asio/asio/include",
+					"$(PROJECT_DIR)/dependencies/all/tinyxml2",
+					"$(PROJECT_DIR)/dependencies/all/stb-image",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/dependencies/mac/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Rubberduckycooly. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.decomp.RSDKv4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E1BEFCA29FCABB200A1C6D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = dependencies/mac/RSDKv4.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/dependencies/all/asio/asio/include",
+					"$(PROJECT_DIR)/dependencies/all/tinyxml2",
+					"$(PROJECT_DIR)/dependencies/all/stb-image",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/dependencies/mac/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Rubberduckycooly. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.decomp.RSDKv4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C962193125898A9400B47AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = dependencies/mac/info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C962193225898A9400B47AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = dependencies/mac/info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E1BEFC829FCABB200A1C6D8 /* Build configuration list for PBXNativeTarget "RSDKv4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1BEFC929FCABB200A1C6D8 /* Debug */,
+				9E1BEFCA29FCABB200A1C6D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C962191425898A9300B47AB3 /* Build configuration list for PBXProject "RSDKv4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C962193125898A9400B47AB3 /* Debug */,
+				C962193225898A9400B47AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C962191125898A9300B47AB3 /* Project object */;
+}
